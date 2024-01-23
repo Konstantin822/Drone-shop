@@ -1,0 +1,23 @@
+// Variables
+@import './variables/color.scss';
+@import './variables/fonts.scss';
+@import './variables/media.scss';
+// Variables END
+
+// Global Style
+@import './global/global.scss';
+@import './global/reset.scss';
+// Global Style END
+
+// Common
+@import './common/header.scss';
+@import './common/footer.scss';
+// Common END
+
+// Components
+@import './components/button.scss';
+// Components END
+
+// Pages Style
+@import './pages/home.scss';
+// Pages Style END

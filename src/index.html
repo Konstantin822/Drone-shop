@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/assets/sass/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__info">
+                    <div class="header__info_contacts">
+                        <h4 class="header__info_contacts-title">Контакти:</h4>
+                        <p class="header__info_contacts-number">+380-00-00-000</p>
+                        <p class="header__info_contacts-number">+380-00-00-000</p>
+                        <p class="header__info_contacts-number">+380-00-00-000</p>
+                    </div>
+
+                    <div class="header__info_icons">
+                        <img src="" alt="facebook">
+                        <img src="" alt="telegram">
+                        <img src="" alt="instagram">
+                    </div>
+                </div>
+
+                <div class="header__menu">
+                    <img class="logo header__menu_logo" src="" alt="logo">
+
+                    <div class="header__menu_hamburger" onclick="toggleMenu()">
+                        <span class="header__menu_span"></span>
+                        <span class="header__menu_span"></span>
+                        <span class="header__menu_span"></span>
+                    </div>
+
+                    <nav class="header__menu_mobile">
+                        <a class="header__menu_mobile-link" href="">Головна</a>
+                        <a class="header__menu_mobile-link" href="">Магазин</a>
+                        <a class="header__menu_mobile-link" href="">Дрони</a>
+                        <a class="header__menu_mobile-link" href="">Послуги</a>
+                        <a class="header__menu_mobile-link" href="">Про нас</a>
+                        <a class="header__menu_mobile-link" href="">Контакти</a>
+                    </nav>
+
+                    <nav class="header__menu_nav">
+                        <a class="header__menu_nav-link" href="">Головна</a>
+                        <a class="header__menu_nav-link" href="">Магазин</a>
+                        <a class="header__menu_nav-link" href="">Дрони</a>
+                        <a class="header__menu_nav-link" href="">Послуги</a>
+                        <a class="header__menu_nav-link" href="">Про нас</a>
+                        <a class="header__menu_nav-link" href="">Контакти</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="home">
+            <section class="hero">
+                <div class="container hero__container">
+                    <div class="hero__description">
+                        <h1 class="hero__desription-title">Іноваційні рішення у сільському господарстві з агро солве
+                        </h1>
+                        <p class="hero__description-sub-title">Підніміть Ваше Фермерство на Новий Рівень</p>
+                        <div class="hero__description_buttons">
+                            <button class="button hero__description_buttons-btn">Перейти до магазину</button>
+                            <button class="button hero__description_buttons-btn">Замовити ЗЗР</button>
+                        </div>
+                    </div>
+                    <div class="hero__img"><img src="" alt="hero-drone"></div>
+                </div>
+            </section>
+
+            <section class="bestseller">
+                <div class="container bestseller__container">
+                    <div class="bestseller__nav_buttons">
+                        <button class="button bestseller__nav_buttons-btn">Магазин</button>
+                        <button class="button bestseller__nav_buttons-btn">Дрони</button>
+                        <button class="button bestseller__nav_buttons-btn">Послуги</button>
+                    </div>
+                    <div class="bestseller__title">
+                        <h2 class="bestseller__title-text">Хіт продажу</h2>
+                    </div>
+                    <div class="bestseller__items">
+                        <div class="bestseller__items_box">
+                            <img class="bestseller__items_box-icon" src="" alt="icon">
+                            <div class="bestseller__items_box-drone">
+                                <img class="bestseller__items_box-drone_img" src="" alt="drone">
+                            </div>
+                            <div class="bestseller__items_box_description">
+                                <p class="bestseller__items_box_description-text">Дрон-обприскувач XAG P100Pro</p>
+                                <p class="bestseller__items_box_description-price">314 999 грн</p>
+                            </div>
+                        </div>
+                        <div class="bestseller__items_box">
+                            <img class="bestseller__items_box-icon" src="" alt="icon">
+                            <div class="bestseller__items_box-drone">
+                                <img class="bestseller__items_box-drone_img" src="" alt="drone">
+                            </div>
+                            <div class="bestseller__items_box_description">
+                                <p class="bestseller__items_box_description-text">Дрон-обприскувач XAG P100Pro</p>
+                                <p class="bestseller__items_box_description-price">314 999 грн</p>
+                            </div>
+                        </div>
+                        <div class="bestseller__items_box">
+                            <img class="bestseller__items_box-icon" src="" alt="icon">
+                            <div class="bestseller__items_box-drone">
+                                <img class="bestseller__items_box-drone_img" src="" alt="drone">
+                            </div>
+                            <div class="bestseller__items_box_description">
+                                <p class="bestseller__items_box_description-text">Дрон-обприскувач XAG P100Pro</p>
+                                <p class="bestseller__items_box_description-price">314 999 грн</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="innovations">
+                <div class="container innovations__container">
+                    <div class="innovations__heading">
+                        <div class="innovations__heading_image">
+                            <img class="innovations__heading_image-img" src="" alt="heading img">
+                        </div>
+
+                        <div class="innovations__heading_info">
+                            <h2 class="innovations__heading_info-title">Інновації у Сільському Господарстві:
+                                <span class="innovations__heading_info-title-thin">Ключ до
+                                    Прогресу
+                                </span>
+                            </h2>
+                            <p class="innovations__heading_info-descripion">
+                                Використання передових технологій, як-от дронів, кардинально змінює агросектор. Вони
+                                сприяють підвищенню ефективності та врожайності, одночасно зменшуючи вплив на довкілля.
+                                Це не просто покращення роботи фермерів, а крок до сталого майбутнього.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="innovations__items">
+                        <div class="innovations__items_card">
+                            <img class="innovations__items_card-img" src="" alt="battery">
+                            <h4 class="innovations__items_card-title">Еффективність</h4>
+                            <p class="innovations__items_card-text">Технології спрощують сільськогосподарські процеси,
+                                зменшуючи трудовитрати.</p>
+                        </div>
+
+                        <div class="innovations__items_card">
+                            <img class="innovations__items_card-img" src="" alt="harvest">
+                            <h4 class="innovations__items_card-title">Врожайність</h4>
+                            <p class="innovations__items_card-text">Точне внесення засобів догляду підвищує врожай.</p>
+                        </div>
+
+                        <div class="innovations__items_card">
+                            <img class="innovations__items_card-img" src="" alt="profit">
+                            <h4 class="innovations__items_card-title">Прибуток</h4>
+                            <p class="innovations__items_card-text">Дрони скорочують витрати та підвищують доходи
+                                фермерів.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="characteristics">
+                <div class="container characteristics__container">
+                    <div class="characteristics__heading">
+                        <div class="characteristics__heading_info">
+                            <h2 class="characteristics__heading_info-title">XAG P100 Pro</h2>
+                            <p class="characteristics__heading_info-text">Це ефективний агродрон з 50-літровим баком і
+                                передовою
+                                системою RTK-навігації, який здатен обробити до 30га акрів за годину, ідеальний для
+                                інтенсивного агробізнесу.
+                            </p>
+                            <div class="characteristics__heading_info_buttons">
+                                <button class="button characteristics__heading_info_buttons-btn">Переглянути XAG P100
+                                    Pro</button>
+                                <button class="button characteristics__heading_info_buttons-btn">Перейти до
+                                    магазину</button>
+                            </div>
+                        </div>
+
+                        <div class="characteristics__heading_image">
+                            <img class="characteristics__heading_image-img" src="" alt="drone">
+                        </div>
+                    </div>
+
+                    <div class="characteristics__items">
+                        <div class="characteristics__items_card">
+                            <h4 class="characteristics__items_card-title">Навігація</h4>
+                            <p class="characteristics__items_card-text">RTK ±10 см (горизонт./вертикал.)</p>
+                        </div>
+                        <div class="characteristics__items_card">
+                            <h4 class="characteristics__items_card-title">Ємність бака</h4>
+                            <p class="characteristics__items_card-text">50 л (13.2 гал),
+                                макс. потік 22 л/хв</p>
+                        </div>
+                        <div class="characteristics__items_card">
+                            <h4 class="characteristics__items_card-title">Радар</h4>
+                            <p class="characteristics__items_card-text">4D іміджинг, діапазон 1.5-80 м</p>
+                        </div>
+                        <div class="characteristics__items_card">
+                            <h4 class="characteristics__items_card-title">Система розпилення</h4>
+                            <p class="characteristics__items_card-text">2 центрифугальні форсунки</p>
+                        </div>
+                        <div class="characteristics__items_card">
+                            <h4 class="characteristics__items_card-title">Помпа</h4>
+                            <p class="characteristics__items_card-text">2 перистальтичні помпи, 22 л/хв макс.</p>
+                        </div>
+                        <div class="characteristics__items_card">
+                            <h4 class="characteristics__items_card-title">Розміри</h4>
+                            <p class="characteristics__items_card-text">2927×2868×323 мм (розкладено), 893×1095×345 мм
+                                (складено)
+                            </p>
+                        </div>
+                        <div class="characteristics__items_card">
+                            <h4 class="characteristics__items_card-title">Матеріал</h4>
+                            <p class="characteristics__items_card-text">Скловолокно та вуглецеве волокно</p>
+                        </div>
+                        <div class="characteristics__items_card">
+                            <h4 class="characteristics__items_card-title">Батарея:</h4>
+                            <p class="characteristics__items_card-text">20 Аг, макс. струм
+                                зарядки 100 А</p>
+                        </div>
+                        <div class="characteristics__items_card">
+                            <h4 class="characteristics__items_card-title">Ширина обприскування</h4>
+                            <p class="characteristics__items_card-text">До 10 м</p>
+                        </div>
+                        <div class="characteristics__items_card">
+                            <h4 class="characteristics__items_card-title">Продуктивність</h4>
+                            <p class="characteristics__items_card-text">70 акрів/год, макс. швидкість 13.8 м/с</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advantages">
+                <div class="container advantages__container">
+                    <div class="advantages__image">
+                        <img class="advantages__image-img" src="" alt="drone">
+                    </div>
+                    <div class="advantages__info">
+                        <h2 class="advantages__info-title">Переваги дронів</h2>
+                        <div class="advantages__info_card">
+                            <img class="advantages__info_card-icon" src="" alt="clock">
+                            <h3 class="advantages__info_card-title">Економія Часу та Ресурсів</h3>
+                            <p class="advantages__info_card-text">Завдяки автоматизації ви зможете обробляти великі
+                                площі за
+                                короткий час, значно знижуючи витрати праці.</p>
+                        </div>
+                        <div class="advantages__info_card">
+                            <img class="advantages__info_card-icon" src="" alt="leaf">
+                            <h3 class="advantages__info_card-title">Екологічність</h3>
+                            <p class="advantages__info_card-text">Мінімізація використання хімікатів і точне дозування
+                                сприяє зниженню впливу на навколишнє середовище.</p>
+                        </div>
+                        <div class="advantages__info_card">
+                            <img class="advantages__info_card-icon" src="" alt="harvest">
+                            <h3 class="advantages__info_card-title">Збільшення Врожайності</h3>
+                            <p class="advantages__info_card-text">Точне і своєчасне внесення добрив та захисних речовин
+                                сприяє підвищенню якості та кількості врожаю.</p>
+                        </div>
+                        <div class="advantages__info_card">
+                            <img class="advantages__info_card-icon" src="" alt="precision">
+                            <h3 class="advantages__info_card-title">Точність</h3>
+                            <p class="advantages__info_card-text">Наші дрони забезпечують надзвичайно точне
+                                обприскування,
+                                мінімізуючи витрати на засоби захисту рослин та забезпечуючи рівномірне покриття.</p>
+                        </div>
+                        <div class="advantages__info_card">
+                            <img class="advantages__info_card-icon" src="" alt="monitor">
+                            <h3 class="advantages__info_card-title">Моніторинг та Аналітика</h3>
+                            <p class="advantages__info_card-text">Збір даних про стан посівів дозволяє вчасно виявляти
+                                проблеми та оптимізувати процеси догляду за полями.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="for-all">
+                <div class="container for-all__container">
+                    <div class="for-all__image">
+                        <img class="for-all__image-img" src="" alt="field">
+                    </div>
+
+                    <div class="for-all__heading">
+                        <h2 class="for-all__heading-title">Дрони для Кожного: <span
+                                class="for-all__heading-title-thin">Технології, Що Трансформують Кожне
+                                Господарство</span>
+                        </h2>
+                    </div>
+
+                    <div class="for-all__items">
+                        <div class="for-all__items_box">
+                            <img class="for-all__items_box-img" src="" alt="companies">
+                            <div class="for-all__items_box_description">
+                                <h4 class="for-all__items_box_description-title">Сервісним компаніям</h4>
+                                <p class="for-all__items_box_description-text">Можливість використовувати наші дрони для
+                                    надання більш комплексних та технологічних послуг своїм клієнтам.</p>
+                            </div>
+                        </div>
+                        <div class="for-all__items_box">
+                            <img class="for-all__items_box-img" src="" alt="agro">
+                            <div class="for-all__items_box_description">
+                                <h4 class="for-all__items_box_description-title">Агрохолдингам</h4>
+                                <p class="for-all__items_box_description-text">Ідеальне рішення для агрохолдингів, які
+                                    прагнуть максимізувати продуктивність та знизити витрати на великих територіях.</p>
+                            </div>
+                        </div>
+                        <div class="for-all__items_box">
+                            <img class="for-all__items_box-img" src="" alt="farm">
+                            <div class="for-all__items_box_description">
+                                <h4 class="for-all__items_box_description-title">Мікро малим підприємствам</h4>
+                                <p class="for-all__items_box_description-text">Навіть невеликі господарства можуть
+                                    отримати переваги від високотехнологічних дронів, підвищуючи врожайність без великих
+                                    витрат.</p>
+                            </div>
+                        </div>
+                        <div class="for-all__items_box">
+                            <img class="for-all__items_box-img" src="" alt="factory">
+                            <div class="for-all__items_box_description">
+                                <h4 class="for-all__items_box_description-title">Великим сільськогосподарським
+                                    підприємствам</h4>
+                                <p class="for-all__items_box_description-text">Оптимізація великих площь, здатність
+                                    використовувати наші дрони для точного та ефективного управління великими земельними
+                                    ділянками.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="container services__container">
+                    <div class="services__heading">
+                        <h2 class="services__heading-title">
+                            Наші Сервісні послуги
+                        </h2>
+                    </div>
+                    <div class="services__items">
+                        <div class="services__items_box">
+                            <div class="services__items_box_image">
+                                <img class="services__items_box_image-img" src="" alt="drone">
+                            </div>
+                            <div class="services__items_box_description">
+                                <h3 class="services__items_box_description-title">Внесення ЗЗР</h3>
+                                <p class="services__items_box_description-text">Внесення ЗЗР агродронами все частіше
+                                    практикується українськими аграріями.У 2023 році частка земель, оброблених дронами,
+                                    збільшилася у 3,5 р., у порівнянні з сезоном 2022.</p>
+                                <div class="services__items_box_description_buttons">
+                                    <button class="button services__items_box_description_buttons-btn">Замовити</button>
+                                    <button
+                                        class="button services__items_box_description_buttons-btn">Детальніше</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__items_box">
+                            <div class="services__items_box_image">
+                                <img class="services__items_box_image-img" src="" alt="drone">
+                            </div>
+                            <div class="services__items_box_description">
+                                <h3 class="services__items_box_description-title">Внесення добрив</h3>
+                                <p class="services__items_box_description-text">Дрони можуть точно розподіляти добрива
+                                    на
+                                    основі даних, зібраних за допомогою сучасних технологій, таких як GPS та сенсори, що
+                                    дозволяє забезпечити прецизійне внесення без перекриття чи пропусків.</p>
+                                <div class="services__items_box_description_buttons">
+                                    <button class="button services__items_box_description_buttons-btn">Замовити</button>
+                                    <button
+                                        class="button services__items_box_description_buttons-btn">Детальніше</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__items_box">
+                            <div class="services__items_box_image">
+                                <img class="services__items_box_image-img" src="" alt="drone">
+                            </div>
+                            <div class="services__items_box_description">
+                                <h3 class="services__items_box_description-title">Десикація</h3>
+                                <p class="services__items_box_description-text">Агродрони важливі для десикації,
+                                    борються з
+                                    бур'янами і готують посіви до збору. Вони застосовують ультрамалі дози препаратів
+                                    для рівномірного покриття листя, забезпечуючи розподіл розчину за допомогою
+                                    повітряного потоку від гвинтів.</p>
+                                <div class="services__items_box_description_buttons">
+                                    <button class="button services__items_box_description_buttons-btn">Замовити</button>
+                                    <button
+                                        class="button services__items_box_description_buttons-btn">Детальніше</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="container reviews__container">
+                    <div class="reviews__heading">
+                        <h2 class="reviews__heading-title">Відгуки</h2>
+                    </div>
+                    <div class="reviews__items">
+                        <div class="reviews__items_box">
+                            <p class="reviews__items_box-text">"Завдяки дронам XAG, ми змогли знизити витрати на обробку
+                                полів на 30% і значно підвищити врожайність. Це справжній прорив у нашому господарстві!"
+                            </p>
+                            <div class="reviews__items_box_person">
+                                <img class="reviews__items_box_person-img" src="" alt="person">
+                                <div class="reviews__items_box_person_info">
+                                    <p class="reviews__items_box_person_info-name">Василь</p>
+                                    <p class="reviews__items_box_person_info-position">Власник Ферми</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__items_box">
+                            <p class="reviews__items_box-text">"Я рекомендую дрони XAG своїм клієнтам, тому що це
+                                зручний інструмент для точного моніторингу
+                                та обробки полів. Результати завжди перевершують очікування."
+                            </p>
+                            <div class="reviews__items_box_person">
+                                <img class="reviews__items_box_person-img" src="" alt="person">
+                                <div class="reviews__items_box_person_info">
+                                    <p class="reviews__items_box_person_info-name">Олена</p>
+                                    <p class="reviews__items_box_person_info-position">Агроконсультант</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__items_box">
+                            <p class="reviews__items_box-text">"Наша компанія використовує дрони XAG для обприскування
+                                та діагностики полів. Ефективність та точність роботи дронів вражають - це інвестиція,
+                                яка виправдала себе з лишком."
+                            </p>
+                            <div class="reviews__items_box_person">
+                                <img class="reviews__items_box_person-img" src="" alt="person">
+                                <div class="reviews__items_box_person_info">
+                                    <p class="reviews__items_box_person_info-name">Ігор</p>
+                                    <p class="reviews__items_box_person_info-position">Директор Агрофірми</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="consult">
+                <div class="container consult__container">
+                    <div class="consult__heading">
+                        <h2 class="consult__heading-title">ОФОРМИТИ ЗАЯВКУ
+                            ТА ОТРИМАТИ КОНСУЛЬТАЦІЮ</h2>
+                        <p class="consult__heading-text">Залишіть свої контактита наші спеціалісти передзвонять вам,
+                            дадуть відповіді на всі запитаннята допоможуть оформити замовлення.</p>
+                        <img class="consult__heading-img" src="" alt="drone">
+                    </div>
+                    <div class="consult__form">
+                        <form class="consult__form_items">
+                            <div class="consult__form_items_field">
+                                <label class="consult__form_items_field-label" for="fname">Ваше ім‘я</label>
+                                <input class="consult__form_items_field-input" type="text" id="fname" name="fname"
+                                    placeholder="Андрій">
+                            </div>
+                            <div class="consult__form_items_field">
+                                <label class="consult__form_items_field-label" for="mnumber">Ваш номер телефону</label>
+                                <input class="consult__form_items_field-input" type="text" id="mnumber" name="mnumber"
+                                    placeholder="+380 00 00 000">
+                            </div>
+
+                            <button class="button consult__form_items-btn">Відправити</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <img class="logo footer__logo" src="" alt="logo">
+
+                <nav class="footer__nav">
+                    <a class="footer_nav-link" href="">Головна</a>
+                    <a class="footer_nav-link" href="">Магазин</a>
+                    <a class="footer_nav-link" href="">Дрони</a>
+                    <a class="footer_nav-link" href="">Послуги</a>
+                    <a class="footer_nav-link" href="">Про нас</a>
+                    <a class="footer_nav-link" href="">Контакти</a>
+                </nav>
+
+                <div class="footer__contacts">
+                    <h4 class="footer__contacts-title">Контакти:</h4>
+                    <p class="footer__contacts-number">+380-00-00-000</p>
+                    <p class="footer__contacts-number">+380-00-00-000</p>
+                    <p class="footer__contacts-number">+380-00-00-000</p>
+                </div>
+
+                <div class="footer__icons">
+                    <img src="" alt="facebook">
+                    <img src="" alt="telegram">
+                    <img src="" alt="instagram">
+                </div>
+
+                <div class="footer__bottom">
+                    <p class="footer__bottom-text">© 2023 AAGENCI. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
