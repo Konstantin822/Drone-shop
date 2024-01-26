@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@300;500;600&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,600;8..144,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Red+Hat+Display:wght@400;500&display=swap');
 
-$inter-font: 'Inter', sans-serif;
-$montserrat-font: 'Montserrat', sans-serif;
-$roboto-font: 'Roboto Flex', sans-serif;
 
 :root {
     // Fonts
@@ -12,70 +9,67 @@ $roboto-font: 'Roboto Flex', sans-serif;
     --roboto-font: 'Roboto Flex', sans-serif;
 
     // Global Fonts
-    --button-font: 400 20rem/normal var(--inter-font);
+    --button-font: 400 20rem/20rem var(--inter-font);
 
     // Header Fonts
-    --header-info-font: 600 14rem/normal var(--roboto-font);
-    --header-menu-font: 400 12rem/normal var(--inter-font);
+    --header-info-font: 600 14rem/15rem var(--roboto-font);
+    --header-menu-font: 400 12rem/18rem var(--inter-font);
 
     // Hero Fonts
-    --heading-title-font: 600 54rem/normal var(--montserrat-font);
-    --heading-sub-title-font: 300 12rem/normal var(--inter-font);
-    --heading-mobile-title-font: 600 30rem/normal var(--montserrat-font);
-    --heading-mobile-sub-title-font: 300 28rem/normal var(--inter-font);
+    --heading-title-font: 600 54rem/59rem var(--montserrat-font);
+    --heading-sub-title-font: 300 32rem/35rem var(--inter-font);
 
     // Bestseller Fonts
-    --bestseller-font: 600 32rem/normal var(--roboto-font);
+    --bestseller-title-font: 600 48rem/53rem var(--montserrat-font);
+    --bestseller-text-font: 600 24rem/normal var(--roboto-font);
+    --bestseller-price-font: 600 32rem/normal var(--roboto-font);
 
     // Innovations Fonts
-    --innovations-title-font: 600 48rem/normal var(--montserrat-font);
-    --innovations-sub-title-font: 300 48rem/normal var(--montserrat-font);
-    --innovations-description-font: 200 22rem/normal var(--roboto-font);
-    --innovations-items-title-font: 600 24rem/normal var(--roboto-font);
-    --innovations-items-text-font: 200 22rem/normal var(--roboto-font);
+    --innovations-title-font: 600 48rem/53rem var(--montserrat-font);
+    --innovations-sub-title-font: 300 48rem/53rem var(--montserrat-font);
+    --innovations-description-font: 200 22rem/24rem var(--roboto-font);
+    --innovations-items-title-font: 600 24rem/26rem var(--roboto-font);
+    --innovations-items-text-font: 200 22rem/24rem var(--roboto-font);
 
     // Characteristics Fonts
-    --characteristics-title-font: 600 18rem/normal var(--roboto-font);
-    --characteristics-text-font: 200 16rem/normal var(--roboto-font);
-    --characteristics-mobile-title-font: 600 12rem/normal var(--roboto-font);
-    --characteristics-mobile-text-font: 200 12rem/normal var(--roboto-font);
-    --characteristics-button-font: 400 16rem/normal var(--roboto-font);
+    --characteristics-title-font: 600 48rem/53rem var(--montserrat-font);
+    --characteristics-text-font: 200 22rem/24rem var(--roboto-font);
+    --characteristics-button-font: 400 16rem/16rem var(--roboto-font);
+    --characteristics-sub-title-font: 600 18rem/20rem var(--roboto-font);
+    --characteristics-sub-text-font: 200 18rem/20rem var(--roboto-font);
 
     // Advantages Fonts
-    --advantages-title-font: 600 48rem/normal var(--montserrat-font);
-    --advantages-card-title-font: 600 24rem/normal var(--roboto-font);
-    --advantages-card-text-font: 200 22rem/normal var(--roboto-font);
-    --advantages-mobile-title-font: 600 30rem/normal var(--montserrat-font);
-    --advantages-card-mobile-title-font: 600 19rem/normal var(--roboto-font);
-    --advantages-card-mobile-text-font: 200 16rem/normal var(--roboto-font);
+    --advantages-title-font: 600 48rem/53rem var(--montserrat-font);
+    --advantages-card-title-font: 600 24rem/26rem var(--roboto-font);
+    --advantages-card-text-font: 200 22rem/24rem var(--roboto-font);
 
     // For-all Fonts
-    --for-all-title-font: 600 48rem/normal var(--montserrat-font);
-    --for-all-thin-title-font: 300 48rem/normal var(--montserrat-font);
-    --for-all-box-title: 600 24rem/normal var(--roboto-font);
-    --for-all-box-text: 200 22rem/normal var(--roboto-font);
-    --for-all-mobile-title-font: 300 28rem/normal var(--montserrat-font);
-    --for-all-mobile-thin-title-font: 300 18rem/normal var(--montserrat-font);
+    --for-all-title-font: 600 48rem/53rem var(--montserrat-font);
+    --for-all-thin-title-font: 300 48rem/53rem var(--montserrat-font);
+    --for-all-box-title: 600 24rem/26rem var(--roboto-font);
+    --for-all-box-text: 200 22rem/24rem var(--roboto-font);
 
     // Services Fonts
-    --services-title-font: 600 48rem/normal var(--montserrat-font);
-    --services-box-title-font: 700 32rem/normal var(--roboto-font);
-    --services-box-text-font: 200 22rem/normal var(--roboto-font);
-    --services-mobile-title-font: 300 28rem/normak var(--montserrat-font);
+    --services-title-font: 600 48rem/53rem var(--montserrat-font);
+    --services-box-title-font: 700 32rem/35rem var(--roboto-font);
+    --services-box-text-font: 200 22rem/24rem var(--roboto-font);
+    --services-box-buttons-font: 400 16rem/16rem var(--roboto-font);
 
     // Reviews Fonts 
-    --reviews-title-font: 600 48rem/normal var(--montserrat-font);
-    --reviews-box-text-font: 200 22rem/normal var(--roboto-font);
-    --reviews-box-name-font: 600 24rem/normal var(--montserrat-font);
-    --reviews-box-position-font: 500 18rem/normal var(--montserrat-font);
+    --reviews-title-font: 600 48rem/53rem var(--montserrat-font);
+    --reviews-box-text-font: 200 22rem/24rem var(--roboto-font);
+    --reviews-box-name-font: 600 24rem/24rem var(--montserrat-font);
+    --reviews-box-position-font: 500 18rem/18rem var(--montserrat-font);
 
     // Consult Fonts 
-    --consult-title-font: 600 48rem/normal var(--montserrat-font);
-    --consult-sub-title-font: 200 22rem/normal var(--roboto-font);
-    --consult-label-font: 700 32rem/normal var(--roboto-font);
-    --consult-input-font: 300 24rem/normal var(--roboto-font);
+    --consult-title-font: 600 48rem/53rem var(--montserrat-font);
+    --consult-text-font: 200 22rem/24rem var(--roboto-font);
+    --consult-label-font: 700 32rem/35rem var(--roboto-font);
+    --consult-input-font: 300 24rem/26rem var(--roboto-font);
+    --consult-form-button: 400 20rem/20rem var(--roboto-font);
 
     // Footer Fonts 
-    --footer-nav-font: 400 12rem/normal var(--inter-font);
-    --footer-info-font: 600 14rem/normal var(--roboto-font);
+    --footer-nav-font: 400 12rem/18rem var(--inter-font);
+    --footer-contact-font: 600 14rem/15rem var(--roboto-font);
+    --footer-trade-mark-font: 300 17rem/24rem var(--inter-font);
 }

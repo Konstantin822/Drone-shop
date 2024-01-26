@@ -1,0 +1,688 @@
+.home {
+
+    // Section hero
+    .hero {
+        background-color: var(--color-black-02);
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            max-width: 1678rem;
+            padding: 0 0 265rem 0;
+            background-color: var(--color-black-02);
+            background-image: linear-gradient(to left, transparent, black 85%), url(/src/assets/img/home/hero/background.png);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: 83%;
+        }
+
+        &__description {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 887rem;
+
+            &-title {
+                font: var(--heading-title-font);
+                color: var(--color-white);
+                text-transform: uppercase;
+                margin-bottom: 30rem;
+            }
+
+            &-sub-title {
+                font: var(--heading-sub-title-font);
+                color: var(--color-white);
+                margin-bottom: 60rem;
+            }
+
+            &_buttons {
+                display: flex;
+                text-align: center;
+                gap: 25rem;
+
+                &-btn {
+                    font: var(--button-font);
+                    width: 342rem;
+                }
+
+                &-btn:hover {
+                    box-shadow: 3rem 3rem 5rem var(--color-white), -3rem -3rem 5rem var(--color-white),
+                        -3rem 3rem 5rem var(--color-white), 3rem -3rem 5rem var(--color-white);
+                }
+            }
+        }
+    }
+
+    // Section hero END
+
+    // Section bestseller
+    .bestseller {
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__nav_buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: var(--color-black-1E);
+            padding: 36rem 0;
+
+            &-btn {
+                font: var(--button-font);
+                background: none;
+                color: var(--color-white);
+                border: none;
+                letter-spacing: 0.4rem;
+                padding: 0 200rem;
+            }
+
+            &-btn:nth-child(2) {
+                border-left: 1rem solid var(--color-white);
+                border-right: 1rem solid var(--color-white);
+            }
+
+            &-btn:hover {
+                color: var(--color-green);
+                cursor: pointer;
+            }
+        }
+
+        &__title-text {
+            font: var(--bestseller-title-font);
+            background-color: var(--color-black-19);
+            color: var(--color-white);
+            padding: 160rem 0 0 123rem;
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20rem;
+            padding: 62rem 120rem;
+            background-color: var(--color-black-19);
+
+            &_box {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+
+                &-icon {
+                    width: 72rem;
+                }
+
+                &-drone {
+                    width: 376rem;
+                    padding: 6rem 0 84rem 76rem;
+                }
+
+                &_description {
+                    display: flex;
+                    justify-content: space-between;
+                    align-content: center;
+                    align-items: center;
+                    color: var(--color-white);
+
+                    &-text {
+                        font: var(--bestseller-text-font);
+                        width: 254rem;
+                        letter-spacing: 0.48rem;
+                    }
+
+                    &-price {
+                        font: var(--bestseller-price-font);
+                        letter-spacing: 0.64rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // Section bestseller END
+
+    // Section innovations
+    .innovations {
+        background-color: var(--color-black-19);
+        padding: 60rem 0 160rem 0;
+
+        &__container {
+            max-width: 1678rem;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            gap: 60rem;
+        }
+
+        &__heading {
+            display: flex;
+            align-content: center;
+            gap: 26rem;
+
+            &_image-img {
+                border-radius: 21rem;
+            }
+
+            &_info {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                gap: 20rem;
+                max-width: 537rem;
+                color: var(--color-white);
+
+                &-title {
+                    font: var(--innovations-title-font);
+                    text-transform: uppercase;
+                    letter-spacing: 0.96rem;
+                }
+
+                &-title-thin {
+                    font: var(--innovations-sub-title-font);
+                    text-transform: uppercase;
+                    letter-spacing: 0.96rem;
+                }
+
+                &-description {
+                    font: var(--innovations-description-font);
+                    letter-spacing: 0.44rem;
+                }
+            }
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &_card {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                color: var(--color-white);
+                max-width: 546rem;
+                background-color: var(--color-black-1E);
+                padding: 50rem 40rem;
+                border-radius: 8rem;
+
+                &-title {
+                    font: var(--innovations-items-title-font);
+                    letter-spacing: 0.48rem;
+                    padding-bottom: 10rem;
+                }
+
+                &-text {
+                    font: var(--innovations-items-text-font);
+                    letter-spacing: 0.44rem;
+                }
+            }
+
+            &_card-img {
+                width: 186rem;
+                padding-bottom: 20rem;
+            }
+        }
+    }
+
+    // Section innovations END
+
+    // Section characteristics
+    .characteristics {
+        background-color: var(--color-black-19);
+        padding-bottom: 200rem;
+
+        &__container {
+            background-color: var(--color-black-1E);
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            gap: 60rem;
+            border-radius: 11rem;
+        }
+
+        &__heading {
+            display: flex;
+            flex-direction: row;
+            padding: 147rem 0 0 158rem;
+
+            &_info {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                color: var(--color-white);
+                max-width: 545rem;
+
+                &-title {
+                    font: var(--characteristics-title-font);
+                    text-transform: uppercase;
+                    letter-spacing: 0.96rem;
+                    padding-bottom: 20rem;
+                }
+
+                &-text {
+                    font: var(--characteristics-text-font);
+                    letter-spacing: 0.44rem;
+                    padding-bottom: 40rem;
+                }
+
+                &_buttons {
+                    display: flex;
+                    gap: 20rem;
+
+                    &-btn {
+                        display: flex;
+                        align-content: center;
+                        font: var(--characteristics-button-font);
+                        letter-spacing: 0.32rem;
+                    }
+
+                    &-btn:hover {
+                        box-shadow: 3rem 3rem 5rem var(--color-white), -3rem -3rem 5rem var(--color-white),
+                            -3rem 3rem 5rem var(--color-white), 3rem -3rem 5rem var(--color-white);
+                    }
+                }
+            }
+
+            &_image {
+                max-width: 560rem;
+            }
+        }
+
+        &__items {
+            display: grid;
+            grid-template-columns: 325rem repeat(2, 240rem) 253rem 240rem;
+            grid-template-rows: repeat(2, 106rem);
+            gap: 20rem;
+            padding: 0 0 60rem 158rem;
+
+            &_card {
+                background-color: var(--color-black-19);
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                border-radius: 6rem;
+
+                &-title {
+                    font: var(--characteristics-sub-title-font);
+                    color: var(--color-sand);
+                    letter-spacing: 0.36rem;
+                    padding: 20rem 0 6rem 20rem;
+                }
+
+                &-text {
+                    font: var(--characteristics-sub-text-font);
+                    color: var(--color-light-grey-E3);
+                    letter-spacing: 0.36rem;
+                    padding: 0 20rem 6rem 20rem;
+                }
+            }
+        }
+    }
+
+    // Section characteristics END
+
+    // Section advantages 
+    .advantages {
+
+        &__container {
+            background-color: var(--color-black-19);
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+        }
+
+        &__image {
+            max-width: 792rem;
+            position: relative;
+
+            &-img {
+                position: sticky;
+            }
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 30rem;
+            margin-left: 208rem;
+
+            &-title {
+                font: var(--advantages-title-font);
+                color: var(--color-white);
+                text-transform: uppercase;
+                letter-spacing: 0.96rem;
+            }
+
+            &_card {
+                background-color: var(--color-black-1E);
+                color: var(--color-white);
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                max-width: 548rem;
+                border-radius: 8rem;
+                padding: 30rem 40rem;
+
+                &-icon {
+                    max-width: 50rem;
+                    padding-bottom: 10rem;
+                }
+
+                &-title {
+                    font: var(--advantages-card-title-font);
+                    letter-spacing: 0.48rem;
+                    padding-bottom: 16rem;
+                }
+
+                &-text {
+                    font: var(--advantages-card-text-font);
+                    letter-spacing: 0.44rem;
+                }
+            }
+        }
+    }
+
+    // Section advantages END
+
+    // Section for-all
+    .for-all {
+        margin-top: 180rem;
+
+        &__container {
+            background-color: var(--color-black-19);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__image {
+            max-width: 1398rem;
+            border-radius: 10rem;
+        }
+
+        &__heading {
+            text-transform: uppercase;
+            letter-spacing: 0.96rem;
+            max-width: 1182rem;
+            padding: 42rem 0 31rem 0;
+
+            &-title {
+                font: var(--for-all-title-font);
+                color: var(--color-white);
+            }
+
+            &-title-thin {
+                font: var(--for-all-thin-title-font);
+                color: var(--color-white);
+            }
+        }
+
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(2, 687rem);
+            gap: 20rem;
+
+            &_box {
+                background-color: var(--color-black-1E);
+                border-radius: 8rem;
+                display: flex;
+                gap: 20rem;
+                padding: 50rem 30rem;
+
+                &-img {
+                    max-width: 176rem;
+                    border-radius: 10rem;
+                }
+
+                &_description {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    gap: 20rem;
+
+                    &-title {
+                        font: var(--for-all-box-title);
+                        color: var(--color-sand);
+                        letter-spacing: 0.48rem;
+                    }
+
+                    &-text {
+                        font: var(--for-all-box-text);
+                        color: var(--color-white);
+                        letter-spacing: 0.44rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // Section for-all END
+
+    // Section services 
+    .services {
+        margin-top: 160rem;
+
+        &__container {
+            background-color: var(--color-black-19);
+        }
+
+        &__heading {
+            margin-bottom: 60rem;
+
+            &-title {
+                font: var(--services-title-font);
+                color: var(--color-white);
+                text-transform: uppercase;
+                letter-spacing: 0.96rem;
+            }
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            gap: 60rem;
+
+            &_box {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                gap: 160rem;
+
+                &_image {
+                    max-width: 822rem;
+                }
+
+                &_description {
+                    color: var(--color-white);
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    max-width: 645rem;
+
+
+                    &-title {
+                        font: var(--services-box-title-font);
+                        letter-spacing: 0.64rem;
+                        padding-bottom: 20rem;
+                    }
+
+                    &-text {
+                        font: var(--services-box-text-font);
+                        letter-spacing: 0.44rem;
+                    }
+
+                    &_buttons {
+                        display: flex;
+                        gap: 22rem;
+                        padding-top: 40rem;
+
+                        &-btn {
+                            font: var(--services-box-buttons-font);
+                            width: 250rem;
+                        }
+
+                        &-btn:hover {
+                            box-shadow: 3rem 3rem 5rem var(--color-white), -3rem -3rem 5rem var(--color-white),
+                                -3rem 3rem 5rem var(--color-white), 3rem -3rem 5rem var(--color-white);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    // Section services END
+
+    // Section reviews
+    .reviews {
+        margin-top: 160rem;
+
+        &__container {
+            background-color: var(--color-black-19);
+        }
+
+        &__heading {
+            margin-bottom: 79rem;
+
+            &-title {
+                font: var(--reviews-title-font);
+                color: var(--color-white);
+                text-transform: uppercase;
+                letter-spacing: 0.96rem;
+            }
+        }
+
+        &__items {
+            display: flex;
+            gap: 22rem;
+
+            &_box {
+                background-color: var(--color-black-1E);
+                color: var(--color-white);
+                padding: 50rem 75rem;
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                gap: 30rem;
+                border-radius: 8rem;
+
+                &-text {
+                    font: var(--reviews-box-text-font);
+                    letter-spacing: 0.44rem;
+                    max-width: 397rem;
+                }
+
+                &_person {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 18rem;
+
+                    &-img {
+                        max-width: 68rem;
+                    }
+
+                    &_info {
+
+                        &-name {
+                            font: var(--reviews-box-name-font);
+                            letter-spacing: 0.48rem;
+                            padding-bottom: 8rem;
+                        }
+
+                        &-position {
+                            font: var(--reviews-box-position-font);
+                            letter-spacing: 0.36rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Section reviews END
+
+    // Section consult
+    .consult {
+        margin-top: 177rem;
+
+        &__container {
+            background-color: var(--color-black-19);
+            display: flex;
+            gap: 160rem;
+            padding-bottom: 160rem;
+        }
+
+        &__heading {
+            max-width: 830rem;
+            color: var(--color-white);
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
+            &-title {
+                font: var(--consult-title-font);
+                text-transform: uppercase;
+                letter-spacing: 0.96rem;
+                padding-bottom: 20rem;
+            }
+
+            &-text {
+                font: var(--consult-text-font);
+                letter-spacing: 0.44rem;
+                padding-bottom: 44rem;
+            }
+
+            &-img {
+                border-radius: 10rem;
+            }
+        }
+
+        &__form {
+            padding-top: 185rem;
+
+            &_items {
+                display: flex;
+                flex-direction: column;
+                gap: 50rem;
+
+                &_field {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+
+                    &-label {
+                        font: var(--consult-label-font);
+                        color: var(--color-white);
+                        letter-spacing: 0.64rem;
+                    }
+
+                    &-input {
+                        font: var(--consult-input-font);
+                        letter-spacing: 0.48rem;
+                        padding: 24rem 0;
+                        width: 681rem;
+                        border: none;
+                        border-bottom: 1rem solid var(--color-green);
+                    }
+                }
+
+                &-btn {
+                    font: var(--consult-form-button);
+                    letter-spacing: 0.4rem;
+                }
+
+                &-btn:hover {
+                    box-shadow: 3rem 3rem 5rem var(--color-white), -3rem -3rem 5rem var(--color-white),
+                        -3rem 3rem 5rem var(--color-white), 3rem -3rem 5rem var(--color-white);
+                }
+            }
+        }
+    }
+
+    // Section consult END
+}

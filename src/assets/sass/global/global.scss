@@ -3,13 +3,21 @@ html {
 }
 
 body {
-    font: var()
+    font: var(--header-font);
+    background-color: var(--color-black-19);
+    color: var(--color-white);
 }
 
 .container {
+    width: 100%;
+    max-width: 1680rem;
     margin: 0 auto;
 }
 
 .logo {
     max-width: 328rem;
+}
+
+.wrapper {
+    overflow: hidden;
 }

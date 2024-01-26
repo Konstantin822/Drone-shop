@@ -1,0 +1,68 @@
+.header {
+    background: var(--color-black-02);
+    color: var(--color-white);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1111rem;
+        border-bottom: 1rem solid var(--color-sand);
+        padding: 23rem 0;
+
+        &_contacts {
+            display: flex;
+            flex-direction: row;
+            gap: 30rem;
+
+            &-title {
+                font: var(--header-info-font);
+                letter-spacing: 0.28rem;
+            }
+
+            &-number {
+                font: var(--header-info-font);
+                letter-spacing: 0.28rem;
+                color: var(--color-green);
+            }
+        }
+
+        &_icons {
+            display: flex;
+            flex-direction: row;
+            gap: 10rem;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 46rem 0 145rem 0;
+        gap: 750rem;
+
+        &_nav {
+            display: flex;
+            flex-direction: row;
+            gap: 31rem;
+        }
+
+        &_nav-link {
+            text-decoration: none;
+            font: var(--header-menu-font);
+            letter-spacing: 0.24rem;
+            color: var(--color-white);
+            letter-spacing: 3.9rem;
+        }
+
+        &_nav-link:hover {
+            color: var(--color-green);
+        }
+    }
+}

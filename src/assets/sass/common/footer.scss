@@ -1,0 +1,79 @@
+.footer {
+    background: var(--color-black-02);
+    color: var(--color-white);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 62rem;
+
+        &_logo {
+            margin-bottom: 55rem;
+        }
+
+        &_nav {
+            margin-bottom: 50rem;
+            display: flex;
+            flex-direction: row;
+            gap: 32rem;
+
+            &-link {
+                text-decoration: none;
+                font: var(--header-menu-font);
+                letter-spacing: 0.24rem;
+                color: var(--color-white);
+                letter-spacing: 3.9rem;
+            }
+
+            &-link:hover {
+                color: var(--color-green);
+            }
+        }
+
+        &_contacts {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 32rem;
+            padding-bottom: 41rem;
+
+            &-title {
+                font: var(--footer-contact-font);
+                letter-spacing: 0.28rem;
+            }
+
+            &-number {
+                font: var(--footer-contact-font);
+                color: var(--color-green);
+                letter-spacing: 0.28rem;
+            }
+        }
+
+        &_icons {
+            display: flex;
+            flex-direction: row;
+            gap: 10rem;
+            margin-bottom: 51rem;
+        }
+    }
+
+    &__bottom {
+        width: 100%;
+        border-top: 1rem solid var(--color-sand);
+        display: flex;
+        justify-content: center;
+
+        &-text {
+            color: var(--color-light-grey-B3);
+            font: var(--footer-trade-mark-font);
+            padding: 32rem 0 62rem 0;
+        }
+    }
+}
