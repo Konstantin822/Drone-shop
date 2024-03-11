@@ -1,2 +1,2 @@
 Drone shop.
-Starting from scratch
+Landing page.
